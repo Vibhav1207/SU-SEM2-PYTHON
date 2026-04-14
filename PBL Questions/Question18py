@@ -1,0 +1,14 @@
+orders = [('Latte', 'Large'), ('Espresso', 'Small')]
+total = 0
+
+for item, size in orders:
+    price = 100
+    if size == "Large":
+        price += 50
+    elif size == "Small":
+        price -= 20
+
+    total += price
+    print(item, size, price)
+
+print("Total:", total)
